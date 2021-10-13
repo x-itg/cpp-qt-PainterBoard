@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"  standalone="no"?>
+<Items>
+    <Item shapeName="HGraphicsEllipseItem" penColor="red" brushColor="yellow" width="3"  pointOrder="50,50,100,100">
+        <Command rotate="30" transform="" scale="" > miaoshu </Command>
+        <Command rotate="" transform="1,0,0,1" scale="" > miaoshu2 </Command>
+        <Command rotate="" transform="" scale="2" />
+    </Item>
+    <Item shapeName="HGraphicsRectItem" penColor="red" brushColor="yellow" width="3"  pointOrder="50,50,100,100" />
+    <Item shapeName="HGraphicsTriangleItem"  penColor="green" brushColor="yellow" width="3" pointOrder="50,50,100,100" />
+    <Item shapeName="HGraphicsTextItem"  penColor="red" brushColor="yellow" width="3" fontFamily="新罗马字体" fontSize="17" />
+    <Item shapeName="HGraphicsPixmapItem"  penColor="green" brushColor="yellow" width="3" pointOrder="50,50,100,100" />
+    <Item shapeName="HGraphicsPolygonItem"  penColor="red" brushColor="yellow" width="3" pointOrder="50,50,100,100,100,150" />
+    <Item shapeName="HGraphicsBlineItem"  penColor="red" width="3" pointOrder="50,50,100,100" />
+    <Item shapeName="HGraphicsBezierItem"  penColor="red" width="3" pointOrder="50,50,100,100" />
+</Items>
+
+
+
+<!-- <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Profile FormatVersion="1">
+    <Tools>
+        <Tool Filename="jam" AllowIntercept="true">
+        	<Description>Jamplus build system</Description>
+        </Tool>
+        <Tool Filename="mayabatch.exe" AllowRemote="true" OutputFileMasks="*.dae" DeriveCaptionFrom="lastparam" Timeout="40" />
+        <Tool Filename="meshbuilder_*.exe" AllowRemote="false" OutputFileMasks="*.mesh" DeriveCaptionFrom="lastparam" Timeout="10" />
+        <Tool Filename="texbuilder_*.exe" AllowRemote="true" OutputFileMasks="*.tex" DeriveCaptionFrom="lastparam" />
+        <Tool Filename="shaderbuilder_*.exe" AllowRemote="true" DeriveCaptionFrom="lastparam" />
+    </Tools>
+</Profile> -->
+

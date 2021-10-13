@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout_2" columnstretch="0">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <property name="spacing">
+     <number>0</number>
+    </property>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1200</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menutest">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <widget class="QMenu" name="menufileOperation">
+     <property name="title">
+      <string>多窗体控制</string>
+     </property>
+     <addaction name="actiontab"/>
+     <addaction name="actiontritab"/>
+     <addaction name="actioncenter"/>
+     <addaction name="actionellipseSubwin"/>
+     <addaction name="action8"/>
+     <addaction name="actioncascade"/>
+     <addaction name="actiontitled"/>
+     <addaction name="actionrandom"/>
+     <addaction name="actionveritcal"/>
+     <addaction name="actionhorizental"/>
+    </widget>
+    <widget class="QMenu" name="menuanimationOperation">
+     <property name="title">
+      <string>动画选项</string>
+     </property>
+    </widget>
+    <addaction name="actionnew"/>
+    <addaction name="actionopen"/>
+    <addaction name="actionsave"/>
+    <addaction name="actionsave_as"/>
+    <addaction name="separator"/>
+    <addaction name="menufileOperation"/>
+    <addaction name="menuanimationOperation"/>
+   </widget>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>形状</string>
+    </property>
+    <addaction name="actionpen"/>
+    <addaction name="actionrect"/>
+    <addaction name="actiontriangle"/>
+    <addaction name="actionellipse"/>
+    <addaction name="actionbezier_curve"/>
+    <addaction name="actionstraight_line"/>
+    <addaction name="actionpoligon"/>
+    <addaction name="actionBLine"/>
+    <addaction name="actiontext"/>
+    <addaction name="actionpixmap"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>画笔</string>
+    </property>
+    <addaction name="actionboderColor"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>操作</string>
+    </property>
+    <addaction name="actionredo"/>
+    <addaction name="actionundo"/>
+    <addaction name="actionmerge"/>
+    <addaction name="actionapart"/>
+    <addaction name="actionmove"/>
+    <addaction name="actiondraw"/>
+   </widget>
+   <widget class="QMenu" name="menu_help">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+    <addaction name="actionabout_Qt"/>
+    <addaction name="actionabout_drawBoard"/>
+   </widget>
+   <addaction name="menutest"/>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+   <addaction name="menu_help"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar">
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QDockWidget" name="dockWidget_3">
+   <attribute name="dockWidgetArea">
+    <number>2</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents_3"/>
+  </widget>
+  <action name="actionnew">
+   <property name="icon">
+    <iconset resource="qrc.qrc">
+     <normaloff>:/qrc/new.png</normaloff>:/qrc/new.png</iconset>
+   </property>
+   <property name="text">
+    <string>new</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionopen">
+   <property name="icon">
+    <iconset resource="qrc.qrc">
+     <normaloff>:/qrc/open.png</normaloff>:/qrc/open.png</iconset>
+   </property>
+   <property name="text">
+    <string>open</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionsave">
+   <property name="icon">
+    <iconset resource="qrc.qrc">
+     <normaloff>:/qrc/save.png</normaloff>:/qrc/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>save</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionsave_as">
+   <property name="icon">
+    <iconset resource="qrc.qrc">
+     <normaloff>:/qrc/save_as.jpg</normaloff>:/qrc/save_as.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>save as</string>
+   </property>
+  </action>
+  <action name="actionpen">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="qrc.qrc">
+     <normaloff>:/qrc/pen.png</normaloff>:/qrc/pen.png</iconset>
+   </property>
+   <property name="text">
+    <string>pen</string>
+   </property>
+   <property name="shortcut">
+    <string>1</string>
+   </property>
+  </action>
+  <action name="actionrect">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="qrc.qrc">
+     <normaloff>:/qrc/rect (6).png</normaloff>:/qrc/rect (6).png</iconset>
+   </property>
+   <property name="text">
+    <string>rect</string>
+   </property>
+   <property name="shortcut">
+    <string>3</string>
+   </property>
+  </action>
+  <action name="actiontriangle">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="qrc.qrc">
+     <normaloff>:/qrc/triangle.png</normaloff>:/qrc/triangle.png</iconset>
+   </property>
+   <property name="text">
+    <string>triangle</string>
+   </property>
+   <property name="shortcut">
+    <string>4</string>
+   </property>
+  </action>
+  <action name="actionellipse">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="qrc.qrc">
+     <normaloff>:/qrc/ellipse (4).png</normaloff>:/qrc/ellipse (4).png</iconset>
+   </property>
+   <property name="text">
+    <string>ellipse</string>
+   </property>
+   <property name="shortcut">
+    <string>6</string>
+   </property>
+  </action>
+  <action name="actionbezier_curve">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="qrc.qrc">
+     <normaloff>:/qrc/curve.png</normaloff>:/qrc/curve.png</iconset>
+   </property>
+   <property name="text">
+    <string>bezier curve</string>
+   </property>
+   <property name="shortcut">
+    <string>7</string>
+   </property>
+  </action>
+  <action name="actionredo">
+   <property name="icon">
+    <iconset resource="qrc.qrc">
+     <normaloff>:/qrc/redo.png</normaloff>:/qrc/redo.png</iconset>
+   </property>
+   <property name="text">
+    <string>redo</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Y</string>
+   </property>
+  </action>
+  <action name="actionundo">
+   <property name="icon">
+    <iconset resource="qrc.qrc">
+     <normaloff>:/qrc/undo.png</normaloff>:/qrc/undo.png</iconset>
+   </property>
+   <property name="text">
+    <string>undo</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Z</string>
+   </property>
+  </action>
+  <action name="actionmerge">
+   <property name="icon">
+    <iconset resource="qrc.qrc">
+     <normaloff>:/qrc/merge (2).png</normaloff>:/qrc/merge (2).png</iconset>
+   </property>
+   <property name="text">
+    <string>merge</string>
+   </property>
+   <property name="shortcut">
+    <string>F12</string>
+   </property>
+  </action>
+  <action name="actionapart">
+   <property name="icon">
+    <iconset resource="qrc.qrc">
+     <normaloff>:/qrc/apart (2).png</normaloff>:/qrc/apart (2).png</iconset>
+   </property>
+   <property name="text">
+    <string>apart</string>
+   </property>
+  </action>
+  <action name="actionstraight_line">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="qrc.qrc">
+     <normaloff>:/qrc/straight_line (4).png</normaloff>:/qrc/straight_line (4).png</iconset>
+   </property>
+   <property name="text">
+    <string>straight line</string>
+   </property>
+   <property name="shortcut">
+    <string>2</string>
+   </property>
+  </action>
+  <action name="actionpoligon">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="qrc.qrc">
+     <normaloff>:/qrc/rect (2).png</normaloff>:/qrc/rect (2).png</iconset>
+   </property>
+   <property name="text">
+    <string>poligon</string>
+   </property>
+   <property name="shortcut">
+    <string>5</string>
+   </property>
+  </action>
+  <action name="actionBLine">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="qrc.qrc">
+     <normaloff>:/qrc/B_Line (3).png</normaloff>:/qrc/B_Line (3).png</iconset>
+   </property>
+   <property name="text">
+    <string>BLine</string>
+   </property>
+   <property name="shortcut">
+    <string>8</string>
+   </property>
+  </action>
+  <action name="actionmove">
+   <property name="icon">
+    <iconset resource="qrc.qrc">
+     <normaloff>:/qrc/move.png</normaloff>:/qrc/move.png</iconset>
+   </property>
+   <property name="text">
+    <string>move</string>
+   </property>
+   <property name="shortcut">
+    <string>F2</string>
+   </property>
+  </action>
+  <action name="actiondraw">
+   <property name="icon">
+    <iconset resource="qrc.qrc">
+     <normaloff>:/qrc/pen (3).png</normaloff>:/qrc/pen (3).png</iconset>
+   </property>
+   <property name="text">
+    <string>draw</string>
+   </property>
+   <property name="shortcut">
+    <string>F1</string>
+   </property>
+  </action>
+  <action name="actionboderColor">
+   <property name="icon">
+    <iconset resource="qrc.qrc">
+     <normaloff>:/qrc/color (1).png</normaloff>:/qrc/color (1).png</iconset>
+   </property>
+   <property name="text">
+    <string>boderColor</string>
+   </property>
+  </action>
+  <action name="actiontext">
+   <property name="icon">
+    <iconset resource="qrc.qrc">
+     <normaloff>:/qrc/text (2).png</normaloff>:/qrc/text (2).png</iconset>
+   </property>
+   <property name="text">
+    <string>text</string>
+   </property>
+   <property name="shortcut">
+    <string>9</string>
+   </property>
+  </action>
+  <action name="actionpixmap">
+   <property name="icon">
+    <iconset resource="qrc.qrc">
+     <normaloff>:/qrc/pixmap (2).png</normaloff>:/qrc/pixmap (2).png</iconset>
+   </property>
+   <property name="text">
+    <string>pixmap</string>
+   </property>
+   <property name="shortcut">
+    <string>0</string>
+   </property>
+  </action>
+  <action name="actionabout_Qt">
+   <property name="icon">
+    <iconset resource="qrc.qrc">
+     <normaloff>:/qrc/qt_icon.png</normaloff>:/qrc/qt_icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>about_Qt</string>
+   </property>
+  </action>
+  <action name="actionabout_drawBoard">
+   <property name="icon">
+    <iconset resource="qrc.qrc">
+     <normaloff>:/qrc/drawBoard (2).png</normaloff>:/qrc/drawBoard (2).png</iconset>
+   </property>
+   <property name="text">
+    <string>about_drawBoard</string>
+   </property>
+  </action>
+  <action name="actiontab">
+   <property name="text">
+    <string>页签模式</string>
+   </property>
+  </action>
+  <action name="actiontritab">
+   <property name="text">
+    <string>页签模式2</string>
+   </property>
+  </action>
+  <action name="actioncenter">
+   <property name="text">
+    <string>中心布局</string>
+   </property>
+  </action>
+  <action name="actionellipseSubwin">
+   <property name="text">
+    <string>圆形布局</string>
+   </property>
+  </action>
+  <action name="action8">
+   <property name="text">
+    <string>8字布局</string>
+   </property>
+  </action>
+  <action name="actioncascade">
+   <property name="text">
+    <string>层叠布局</string>
+   </property>
+  </action>
+  <action name="actiontitled">
+   <property name="text">
+    <string>平铺布局</string>
+   </property>
+  </action>
+  <action name="actionrandom">
+   <property name="text">
+    <string>随机布局</string>
+   </property>
+  </action>
+  <action name="actionveritcal">
+   <property name="text">
+    <string>垂直布局</string>
+   </property>
+  </action>
+  <action name="actionhorizental">
+   <property name="text">
+    <string>水平布局</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="qrc.qrc"/>
+ </resources>
+ <connections/>
+</ui>

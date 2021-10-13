@@ -1,0 +1,78 @@
+<RCC>
+    <qresource prefix="/">
+        <file>qrc/alphaback.png</file>
+        <file>qrc/apart.jpg</file>
+        <file>qrc/color.jpg</file>
+        <file>qrc/color.png</file>
+        <file>qrc/copy.png</file>
+        <file>qrc/curve.jpg</file>
+        <file>qrc/cut.png</file>
+        <file>qrc/ellipse.jpg</file>
+        <file>qrc/font.png</file>
+        <file>qrc/merge.jpg</file>
+        <file>qrc/new.png</file>
+        <file>qrc/open.png</file>
+        <file>qrc/paste.png</file>
+        <file>qrc/pen.jpg</file>
+        <file>qrc/rect.jpg</file>
+        <file>qrc/redo.png</file>
+        <file>qrc/save.png</file>
+        <file>qrc/save_as.jpg</file>
+        <file>qrc/straight_line.jpg</file>
+        <file>qrc/style.jpg</file>
+        <file>qrc/tri.jpg</file>
+        <file>qrc/undo.png</file>
+        <file>qrc/B_Line.png</file>
+        <file>qrc/poligon.png</file>
+        <file>qrc/edit.jpg</file>
+        <file>qrc/move.jpg</file>
+        <file>qrc/rotate_small.png</file>
+        <file>qrc/B_Line (2).png</file>
+        <file>qrc/B_Line (3).png</file>
+        <file>qrc/color (1).png</file>
+        <file>qrc/curve (2).png</file>
+        <file>qrc/curve (3).png</file>
+        <file>qrc/curve (4).png</file>
+        <file>qrc/curve.png</file>
+        <file>qrc/eglass-color.png</file>
+        <file>qrc/ellipse (2).png</file>
+        <file>qrc/ellipse (3).png</file>
+        <file>qrc/ellipse (4).png</file>
+        <file>qrc/ellipse (5).png</file>
+        <file>qrc/ellipse.png</file>
+        <file>qrc/pen (1).png</file>
+        <file>qrc/pen (2).png</file>
+        <file>qrc/pen (3).jpg</file>
+        <file>qrc/pen (3).png</file>
+        <file>qrc/pen.png</file>
+        <file>qrc/pen2.png</file>
+        <file>qrc/pixmap (2).png</file>
+        <file>qrc/pixmap.png</file>
+        <file>qrc/rect (2).png</file>
+        <file>qrc/rect (3).png</file>
+        <file>qrc/rect (4).png</file>
+        <file>qrc/rect (5).png</file>
+        <file>qrc/rect.png</file>
+        <file>qrc/straight_line (2).png</file>
+        <file>qrc/straight_line (3).png</file>
+        <file>qrc/straight_line.png</file>
+        <file>qrc/text (1).png</file>
+        <file>qrc/text (2).png</file>
+        <file>qrc/text (3).png</file>
+        <file>qrc/text (4).png</file>
+        <file>qrc/text.png</file>
+        <file>qrc/triangle (2).png</file>
+        <file>qrc/triangle.png</file>
+        <file>qrc/apart (2).png</file>
+        <file>qrc/apart.png</file>
+        <file>qrc/merge (2).png</file>
+        <file>qrc/merge.png</file>
+        <file>qrc/move.png</file>
+        <file>qrc/polygon.png</file>
+        <file>qrc/rect (6).png</file>
+        <file>qrc/straight_line (4).png</file>
+        <file>qrc/drawBoard (2).png</file>
+        <file>qrc/drawBoard.png</file>
+        <file>qrc/qt_icon.png</file>
+    </qresource>
+</RCC>
